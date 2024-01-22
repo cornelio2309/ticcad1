@@ -31,7 +31,47 @@
 	
 	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	
-
+	<style>
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		}
+	
+		th, td {
+		  border: 1px solid #0a0a0a;
+		  padding: 8px;
+		  text-align: left;
+		}
+	
+		th {
+		  background-color: #f2f2f2;
+		}
+	
+		td:first-child {
+		  text-align: center;
+		}
+	
+		/* Estilo para la primera fila */
+		td:first-child {
+		  background-color: aqua;
+		}
+		tr:first-child {
+		  background-color: aqua;
+		}
+	
+		/* Estilos para todas las celdas excepto la primera fila y la primera columna */
+		tr:not(:first-child) {
+		  background-color: pink;
+		}
+		
+	
+		@media screen and (max-width: 600px) {
+		  th, td {
+			padding: 4px;
+			font-size: 12px;
+		  }
+		}
+	  </style>
 </head>
 
     <body>
@@ -54,10 +94,10 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li ><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="index.html">Inicio</a></li>
 						<li><a href="about-us.html">Conceptos</a></li>
-						<li><a href="services.html">Metodologias activas</a></li>
-						<!--<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Recursos y propuesta</a></li>
+						<!--
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
 							<ul class="dropdown-menu">
@@ -73,17 +113,23 @@
 						</li>-->
 						<li><a href="blog.html">Plan de actividades</a></li> 
 						<li><a href="contact-us.html">Contacto</a></li>
+						<li><a href="portfolio.html">Cuestionarios</a></li>
+						<li><a href="portfolio-item.html">Cuadro comparativo</a></li>
+						<li><a href="blog-post.html">Video</a></li>
+						<li><a href="full-width.html">Planeacion</a></li>
 					</ul>
 				</div>
 			</div>
 		</header><!--/header-->
+	
+	
 
         <!-- Page Title -->
 		<div class="section section-breadcrumbs">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Product Details</h1>
+						<h1>Cuadro comparativo</h1>
 					</div>
 				</div>
 			</div>
@@ -91,8 +137,7 @@
         
         <div class="section">
 	    	<div class="container">
-	    		<div class="row">
-	    			<!-- Product Image & Available Colors -->
+	    		<!--<div class="row">
 	    			<div class="col-sm-6">
 	    				<div class="product-image-large">
 	    					<img src="img/portfolio/6.jpg" alt="Item Name">
@@ -105,8 +150,6 @@
 							<span class="color-green"></span>
 						</div>
 	    			</div>
-	    			<!-- End Product Image & Available Colors -->
-	    			<!-- Product Summary & Options -->
 	    			<div class="col-sm-6 product-details">
 	    				<h2>LOREM IPSUM DOLOR</h2>
 						<h3>Quick Overview</h3>
@@ -121,15 +164,70 @@
 						<p><strong>Date: </strong>August 21, 2015</p>
 						<p><strong>Tags: </strong>Photography, Art, Graphics</p>
 	    			</div>
-	    			<!-- End Product Summary & Options -->
 	    			
-	    		</div>
+	    		</div>-->
+			
+				<table border="1">
+					<tr>
+					  <td>EDUCACIÓN	</td>
+					  <td>USOS</td>
+					  <td>RECURSOS</td>
+					  <td>CARACTERÍSTICAS</td>
+					</tr>
+					<tr>
+					  <td>
+						DISTANCIA
+						</td>
+					  <td>Facilita el acceso a la educación desde cualquier ubicación con conexión a internet, permitiendo la flexibilidad de horarios para estudiantes.</td>
+					  <td>	<ul>
+						<li>Videos educativos.</li>
+						<li>Foros de discusión.</li>
+						<li>Presentaciones interactivas.</li>
+						<li>Material de lectura digital.</li>
+						<li>Evaluaciones en línea.</li>
+					</ul></td>
+					  <td>Utiliza plataformas digitales y herramientas de comunicación online para la participación de clases y el intercambio de información.</td>
+					</tr>
+					<tr>
+					  <td>						
+						PRESENCIAL</td>
+					  <td>Proporciona un entorno de aprendizaje directo y en persona, fomentando la interacción social y la participación activa.</td>
+					  <td>
+						<ul>
+							<li>Pizarras y material didáctico físico.</li>
+							<li>Laboratorios.</li>
+							<li>Bibliotecas.</li>
+							<li>Discusiones grupales.</li>
+							<li>Demostraciones prácticas.</li>
+						</ul>
+					
+						</td>
+					  <td>Se basa en la comunicación cara a cara entre estudiantes y maestros, y fomenta el trabajo en equipo y la colaboración en el aula</td>
+					</tr>
+					<tr>
+					  <td>
+						HÍBRIDA</td>
+					  <td>Combina la flexibilidad del aprendizaje en línea con la interacción y participación presencial en ciertas actividades</td>
+					  <td>
+						<ul>
+							<li>Aulas virtuales.</li>
+							<li>Videoconferencias.</li>
+							<li>Materiales impresos.</li>
+							<li>Actividades prácticas en entornos presenciales.</li>
+							<li>Herramientas de colaboración en línea.</li>
+						</ul>
+					
+						</td>
+					  <td>Requiere una cuidadosa planificación y coordinación para integrar efectivamente los elementos presenciales y en línea.</td>
+					</tr>
+				  </table>
+				  
 			</div>
 		</div>
 		
 <hr>
 		
-        <div class="section">
+       <!-- <div class="section">
 	    	<div class="container">
 				<div class="row">
 				
@@ -183,42 +281,41 @@
 				
 				</div>
 			</div>
-		</div>		
+		</div>	-->	
 
 	    <!-- Footer -->
-	    <div class="footer">
+		<div class="footer">
 	    	<div class="container">
 			
 		    	<div class="row">
 				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>Contact Us</h3>
+		    			<h3></h3>
 		    			<p class="contact-us-details">
-	        				<b>Address:</b> 123 Downtown Avenue, Manhattan, New York, United States of America<br/>
+	        				<!--<b>Address:</b> 123 Downtown Avenue, Manhattan, New York, United States of America<br/>
 	        				<b>Phone:</b> +1 123 45678910<br/>
 	        				<b>Fax:</b> +1 123 45678910<br/>
-	        				<b>Email:</b> <a href="mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>
+	        				<b>Email:</b> <a href="mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>-->
 	        			</p>
 		    		</div>				
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>Our Social Networks</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+		    			<h3></h3>
+						<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
 		    			<div>
 		    				<img src="img/icons/facebook.png" width="32" alt="Facebook">
 		    				<img src="img/icons/twitter.png" width="32" alt="Twitter">
 		    				<img src="img/icons/linkedin.png" width="32" alt="LinkedIn">
 							<img src="img/icons/rss.png" width="32" alt="RSS Feed">
-						</div>
+						</div>-->
 		    		</div>
 		    		<div class="col-footer col-md-4 col-xs-6">
-		    			<h3>About Our Company</h3>
-		    				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
-		    		</div>
+		    
+						</div>
 
 		    	</div>
 		    	<div class="row">
 		    		<div class="col-md-12">
-		    			<div class="footer-copyright">&copy; 2014 <a href="http://www.vactualart.com/portfolio-item/basica-a-free-html5-template/">Basica</a> Bootstrap HTML Template. By <a href="http://www.vactualart.com">Vactual Art</a>.</div>
+		    			<div class="footer-copyright">&copy; 2023 <a href="">TICCAD</a> HTML web. By <a href="">Mariana Cornelio</a>.</div>
 		    		</div>
 		    	</div>
 		    </div>
